@@ -39,7 +39,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
 
   const roll = document.getElementById("rollInput").value.trim();
 
-  fetch("/students.json")
+  fetch("students.json")
     .then(res => res.json())
     .then(data => {
 
